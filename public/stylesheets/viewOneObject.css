@@ -1,0 +1,184 @@
+body{
+    background-image: url("/images/fondo3.jpg");
+    background-position: center;
+}
+
+.navegador{
+    /* background-color: RGB(236,224,208); */
+    background-image: url("/images/navegador.jpg");
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.buscar{
+    box-shadow: inset -1px -1px 5px ; 
+}
+
+main{
+    padding: 5%;
+    padding-top: 8%;
+}
+
+.logo{
+    width: 70%;
+    margin-right: 0 !important;
+}
+
+.logo-a{
+    width: 4%;
+    margin: 0;
+}
+
+.seccionColeccionista{
+    margin-bottom: 5%;    
+}
+
+.seccionColeccionista img{
+   height: 20vw;
+   object-fit: contain;
+   object-position: center;     
+   
+}
+
+.carta{
+    border: none;
+}
+
+.carta img{
+    height: 25vw;
+}
+
+
+.recuadro-padre{    
+    padding: 5%;
+    background-color: white;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: -2px 2px 8px ;     
+}
+
+.recuadro-hijo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25vw;
+}
+
+.clavo{
+    object-fit: contain;
+    object-position: center;
+    width: 5vw;
+    height: 5vw !important;    
+    position: absolute;
+    left: 50%;
+    top: 0%;
+}
+
+.textoObject{
+    display: grid;
+    gap: 10px;
+    width: 50%;      
+}
+
+.textoObject p{
+    width: 100% ;
+}
+
+.botones{
+    padding-top: 10px;
+}
+
+.volver{
+    background-color: RGB(92,113,72);
+}
+
+.volver:hover{
+    background-color: RGB(136,177,75);
+}
+
+
+
+
+@media (max-width:768px){
+
+    main{
+        padding-top: 30%;
+    }
+
+    .logo{
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    
+    .logo-a{
+        width: 8%;
+        margin: 0;
+    }
+
+    .recuadro-padre{
+        padding-top: 8%;
+    }
+
+    .clavo{
+        width: 10vw;
+        height: 10vw !important;      
+        left: 48%;  
+    }
+
+    .seccionColeccionista img{
+        height: 50vw;           
+    }
+
+    .carta{
+        width: 100% !important;
+   }
+
+   .carta img{
+        height: 55vw;         
+    }
+}
+
+
+
+
+@media (max-width:390px){
+
+    
+    .clavo{
+        width: 15vw;
+        height: 15vw !important;      
+        left: 48%;  
+    }
+
+    
+    .logo{
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    
+    .logo-a{
+        width: 13%;
+        margin: 0;
+    }
+
+    .recuadro-padre{
+        padding-top: 15%;
+    }
+
+
+    .recuadro-hijo{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .carta{
+        width: 100% !important;
+   }
+
+   .carta img{
+        height: 80vw;         
+    }
+
+}

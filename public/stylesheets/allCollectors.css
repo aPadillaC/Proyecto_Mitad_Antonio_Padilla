@@ -1,0 +1,176 @@
+body{
+    background-image: url("/images/fondo3.jpg");
+    background-position: center;   
+}
+
+.navegador{
+    /* background-color: RGB(236,224,208); */
+    background-image: url("/images/navegador.jpg");
+    position: fixed;
+    width: 100%;
+    z-index: 5;    
+}
+
+.buscar{
+    box-shadow: inset -1px -1px 5px ; 
+}
+
+.logo{
+    width: 70%;
+    margin-right: 0 !important;
+}
+
+.logo-a{
+    width: 4%;
+    margin: 0;
+}
+
+
+
+.sesion{
+    border: none;
+    background-color: transparent;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    font-weight: bolder;
+    margin-left: 82%;
+    width: 18%;
+}
+
+
+h2{
+    margin-bottom: 5%;
+}
+
+
+main{
+    padding: 7% 2.5% 2.5% 6%;   
+}
+
+.carta img{
+    height: 15vw;
+    object-fit: cover;
+    object-position: center;          
+}
+
+.carta{
+    /* margin-bottom: 15%;   */
+    width: 100% !important;    
+    text-align: center;   
+    border: none;
+}   
+
+.carta p{
+    font-size: 20px;
+}
+
+.carta-padre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marco{
+   background-color: white;
+   border-radius: 20px;
+   width: 90%;
+   padding: 10%;
+   margin-bottom: 20%;
+   position: relative;
+   box-shadow: -2px 2px 8px ; 
+}
+
+.clavo{
+    object-fit: contain;
+    object-position: center;
+    width: 3vw;
+    height: 3vw !important;    
+    position: absolute;
+    left: 45%;
+    top: 0%;
+}
+
+.final{
+    height: 18vh;
+}
+
+.final-hijo{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    color: RGB(2,181,204)
+}
+
+
+
+@media (max-width:768px){
+
+    main{
+        padding-top: 15% !important;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .sesion{        
+        margin-left: 64%;
+        width: 40%;
+    }
+
+    .logo{
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    
+    .logo-a{
+        width: 8%;
+        margin: 0;
+    }
+
+    .carta img{
+        height: 30vw;
+    }
+
+    .clavo{
+        width: 7vw;
+        height: 7vw !important;               
+    }
+
+    .marco{
+        width: 100%;
+        padding: 12%;
+    }
+        
+}
+
+
+
+@media (max-width: 390px){
+
+    main{
+        padding-top: 25% !important;
+    }
+
+    .sesion{
+        margin-left: 28%;
+        width: 70%;
+    }
+
+    .logo{
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    
+    .logo-a{
+        width: 13%;
+        margin: 0;
+    }
+
+    .carta img{
+        height: 70vw;
+    }
+
+    .clavo{
+        width: 14vw;
+        height: 14vw !important;         
+    }
+}

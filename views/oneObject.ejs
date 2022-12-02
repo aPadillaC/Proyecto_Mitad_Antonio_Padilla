@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+    <script type="text/javascript"  src="/javascripts/storage/storageManager.js" charset="UTF-8"></script>   
+    <script type="text/javascript"  src="/javascripts/collectorManager.js" charset="UTF-8"></script> 
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/stylesheets/viewOneObject.css">
+</head>
+<body onload="checkCollector()">
+    <header>
+        <%- include("navBar") %>
+    </header>
+    <main>
+        <a href="/" onclick="eliminateCollectorName(), eliminateLogin() "><input type="hidden" class="sesion" maxlength="50" id="sesionAllCollector"  readonly></a>
+        <div class="container-fluid">
+            <section class="row seccionColeccionista">
+                <!-- Parte coleccionista -->
+                <div class="col-12 recuadro-padre">
+                    <img src="/images/WhatsApp Image 2022-11-26 at 08.35.51 (1).jpeg" alt="" class="clavo">
+                    <div class="recuadro-hijo">
+                    <div class="">
+                        <div class="card carta" style="width: 30vw;">
+                            <img src="/images/object/<%= result[0].img %>" class="card-img-top foto-objeto" alt="No tiene foto">                         
+                        </div>
+                    </div>
+                    <div class="textoObject">
+                        <h4><%= result[0].name %></h4>
+                        <p><strong> Descripción:</strong> <%= result[0].description %></p>
+                        <span><strong>Precio:</strong> <%= result[0].price %> €</span>                        
+                        <div class="botones">
+                        <a href="/collector/oneCollector/<%= result[0].collector_id %>" class="btn volver">Volver</a>                
+                        </div>      
+                    </div>
+                    </div>
+                </div>
+            </section>
+  
+        </div>
+    </main>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+    ></script>
+    </body>
+    </html>

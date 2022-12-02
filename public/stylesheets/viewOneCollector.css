@@ -1,0 +1,324 @@
+body{
+    background-image: url("/images/fondo3.jpg");
+    background-position: center;
+    
+}
+
+.navegador{
+    /* background-color: RGB(236,224,208); */
+    background-image: url("/images/navegador.jpg");
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.buscar{
+    box-shadow: inset -1px -1px 5px ; 
+}
+
+main{
+    padding: 5%;
+}
+
+.logo{
+    width: 70%;
+    margin-right: 0 !important;
+}
+
+.logo-a{
+    width: 4%;
+    margin: 0;
+}
+
+.sesion{
+    border: none;
+    background-color: transparent;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    font-weight: bolder;
+    margin-left: 86%;
+    width: 18%;
+}
+
+.sesion:active{
+    border: none;
+}
+
+.seccionColeccionista{
+    margin-bottom: 5%;    
+}
+
+.seccionColeccionista img{
+   height: 20vw;
+   object-fit: cover;
+   object-position: center;     
+   border-radius: 50%;
+}
+
+.carta{
+    border: none;
+}
+
+.recuadro-padre{    
+    padding: 5%;
+    background-color: white;
+    position: relative;
+    border-radius: 5px;    
+    box-shadow: -2px 2px 8px ; 
+}
+
+.recuadro-hijo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.clavo-collector{
+    object-fit: contain;
+    object-position: center;
+    width: 5vw;
+    height: 5vw !important;    
+    position: absolute;
+    left: 50%;
+    top: 0%;
+}
+
+.textoCollector{
+    display: grid;
+    gap: 10px;
+    width: 50%;      
+}
+
+.textoCollector p{
+    width: 100% ;
+}
+
+.botones{
+    padding-top: 20px; 
+}
+
+.editar{
+    background-color: RGB(10,173,152);  
+    padding: 10px;   
+    color: white !important;
+}
+
+.editar:hover{
+    background-color: RGB(246,210,88);
+}
+
+.añadir{
+    background-color:RGB(1,181,204);   
+    padding: 10px;  
+    color: white !important;  
+}
+
+.añadir:hover{
+    background-color: RGB(136,177,75);
+}
+
+.borrar{
+    background-color: RGB(180,57,68);  
+    padding: 10px;  
+    color: white !important;   
+}
+
+
+.borrar:hover{
+    background-color: RGB(213,66,55);
+}
+
+h2{
+    margin-bottom: 50px;    
+}
+
+
+/* SECCION OBJECT */
+
+.objeto{
+    border: none !important;
+    width: 100%;
+    left: 5%;    
+    background-color: transparent;
+}
+
+.imagen-object{
+    height: 20vh;
+    object-fit: contain;
+    object-position: center;
+    border: 1px solid rgba(128, 128, 128, 0.514);
+    border-radius: 50%;
+    width: 100%;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.listado-objetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.marco{
+    background-color: white;
+    border-radius: 20px;
+    width: 80%;
+    padding: 5% 2% 5% 5%;
+    margin-bottom: 20%;
+    position: relative;
+    box-shadow: -2px 2px 8px ; 
+}
+
+
+.clavo{
+    object-fit: contain;
+    object-position: center;
+    width: 3vw;
+    height: 3vw !important;    
+    position: absolute;
+    left: 45%;
+    top: 0%;
+}
+
+
+.final{
+    height: 18vh;
+}
+
+.final-hijo{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    color: RGB(2,181,204)
+}
+
+
+
+
+@media (max-width:768px){
+
+    main{
+        padding-top: 15% !important;
+        
+    }
+
+    .sesion{
+        margin-left: 65%;
+        width: 40%;
+    }
+
+    .logo{
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    
+    .logo-a{
+        width: 8%;
+        margin: 0;
+    }
+
+    .clavo-collector{
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .carta img{
+        height: 30vw;
+    }
+
+    .marco{        
+        width: 100%;      
+        padding-top: 10%;
+        padding-bottom: 0%;
+    }
+
+    .clavo{
+        width: 5vw;
+        height: 5vw !important;
+    }
+
+    .imagen-object{
+        padding: 0;
+        border: none;
+        width: 100%;
+        border-radius: none;
+    }  
+
+    
+}
+
+
+
+
+@media (max-width: 390px){
+
+    main{
+        padding-top: 25% !important;
+        
+    }
+
+    .sesion{
+        margin-left: 30%;
+        width: 70%;
+    }
+
+
+    .logo{
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    
+    .logo-a{
+        width: 13%;
+        margin: 0;
+    }
+
+    .recuadro-hijo{
+        display: flex;
+        flex-direction: column;
+        padding-top: 15%;
+        padding-bottom: 10%;
+    }
+
+
+    .clavo-collector{
+        width: 15vw;
+        height: 15vw !important;            
+        left: 45%;
+    }
+   
+
+   .carta{
+        width: 100% !important;
+   }
+
+   .carta img{
+        height: 80vw;         
+    }
+
+    .textoCollector{
+        width: 100%;
+    }
+
+    .clavo{
+        width: 12vw;
+        height: 12vw !important;
+    }
+
+    .marco{
+        padding-top: 15%;
+    }
+
+    .objeto{
+        left: 0%;
+    }
+    
+    .imagen-object{
+        height: 35vh;
+    }
+
+}

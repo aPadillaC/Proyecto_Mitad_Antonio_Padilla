@@ -1,0 +1,129 @@
+body{
+    background-image: url("/images/fondo3.jpg");
+    background-position: center;
+}
+
+.navegador{
+    /* background-color: RGB(236,224,208); */
+    background-image: url("/images/navegador.jpg");
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.buscar{
+    box-shadow: inset -1px -1px 5px ; 
+}
+
+main{
+    padding: 8% 0 0 38%;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 70%;
+    margin-right: 0 !important;
+}
+
+.logo-a{
+    width: 4%;
+    margin: 0;
+}
+
+.formulario{
+    background-color: rgba(255, 255, 255, 0.393);
+    box-shadow: 1px 10px 20px rgba(128, 128, 128, 0.686);
+    padding: 2% 2%;
+    width: 35%;
+}
+
+.formulario h4{
+    font-size: 30px;
+    text-align: center;
+}
+
+.formulario input, .formulario textarea{
+    width: 100%;
+    /* border: 1px solid rgb(185, 185, 185);
+    padding: 3px;
+    box-sizing: border-box; */
+    border: none;
+    padding: 8px;    
+    border-radius: 5px;     
+    box-shadow: inset -1px -1px 5px ; 
+    
+}
+
+.boton{   
+    background-color: RGB(135,74,72);
+    color: white;  
+    margin-left: 38%;
+    padding: 5px 15px;
+}
+
+.boton:hover{
+    background-color: RGB(194,124,116);
+}
+
+
+
+
+
+
+@media (max-width:768px){
+    
+    main{
+        padding-left: 17%;
+        padding-top: 20%;
+    }
+    
+    .logo{
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    
+    .logo-a{
+        width: 8%;
+        margin: 0;
+    }
+
+    .formulario{
+        width: 80%;
+    }
+
+
+    .boton{
+        margin-left: 40%;  
+    }
+
+}
+
+
+
+@media (max-width: 390px){
+
+    main{
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 30%;
+    }
+
+    .logo{
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    
+    .logo-a{
+        width: 13%;
+        margin: 0;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+
+    .boton{
+        margin-left: 36%;
+    }
+
+}

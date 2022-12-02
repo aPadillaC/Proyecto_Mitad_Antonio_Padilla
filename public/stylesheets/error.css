@@ -1,0 +1,51 @@
+body{
+    background-image: url("/images/errorFondo.jpg"); 
+    color: rgb(190, 9, 9); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position-y: 35%;
+}
+
+.error{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    padding-top: 10%;
+    
+}
+
+h1{
+    font-size: 60px;
+    font-weight: bolder;
+    text-shadow: 4px -4px 4px black;
+}
+
+h3, h5, .botones{
+    padding-top: 5%;
+    text-shadow: 2px -2px 2px black;
+}
+
+h3{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+h5{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+.volver{
+    background-color: RGB(92,113,72);
+    margin-top: 30px;
+    margin-left: 14%;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.volver:hover{
+    background-color: RGB(136,177,75);
+}

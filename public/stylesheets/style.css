@@ -1,0 +1,111 @@
+main {
+  
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("/images/logo.jpeg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position-y: 20vh;
+  height: 90vh;
+  animation-name: animacion1;
+  animation-duration: 2s;
+}
+
+.navegador{
+  /* background-color: RGB(236,224,208); */
+  background-image: url("/images/navegador.jpg");
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+.logo{
+  width: 70%;
+  margin-right: 0 !important;
+  
+}
+
+@keyframes animacion1{
+  from{
+      margin-left: 71%;        
+  }
+  to{
+      margin-left: 0;
+  }
+}
+
+
+.logo-a{
+  width: 4%;
+  margin: 0;
+}
+
+.sesion{
+    border: none;
+    background-color: transparent;
+    margin-top: 6%;
+    margin-left: 80%;
+    width: 20%;
+    font-weight: bolder;
+}
+
+.final{
+  margin-top: 67vh;
+  height: 18.5vh;
+  background-color: RGB(2,181,204);
+}
+
+.final-hijo{
+  display: flex;
+  flex-direction: column;   
+  justify-content: center;
+  color: white
+}
+
+
+@media (max-width: 768px){  
+
+  .logo{
+    width: 100%;
+    margin-right: 0 !important;
+}
+
+.logo-a{
+    width: 8%;
+    margin: 0;
+}
+
+  .sesion{
+    width: 30%;
+    margin-left: 65%;
+  }
+
+  main{
+    padding-top: 10%;
+  }
+}
+
+
+
+@media (max-width: 390px){ 
+  
+  .logo{
+    width: 100%;
+    margin-right: 0 !important;
+}
+
+.logo-a{
+    width: 13%;
+    margin: 0;
+}
+
+  .sesion{
+    width: 60%;
+    margin-left: 34%;
+  }
+
+  main{
+    padding-top: 20%;
+  }
+}
